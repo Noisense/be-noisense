@@ -34,7 +34,7 @@ def add_recording():
             (audio_id, audio_title, audio_timestamp, audio_path, audio_size, audio_duration)
         )
         mysql.connection.commit()
-        return jsonify(status='success')
+        return jsonify(status='success', data=audio_id)
     except Exception as e:
         return jsonify(status='error', message=str(e))
     
