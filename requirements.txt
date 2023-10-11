@@ -1,2 +1,1 @@
-Flask==2.3.3
-Flask-MySQLdb==1.0.1
+flask==2.2.2
